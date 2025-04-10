@@ -1,84 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Presentación - Luciano Peluso</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="flex-column">   
-        <div class="navbar">
-            <h2>LUCHO PELUSO</h2>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Sobre mí</a></li>
-                    <li><a href="#contribute">Objetivos</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="centered">
-            <h1>Frontend developer</h1>
-            <p>HTML only with proper layout, no styling</p>
-        </div>
+    <header>
+        <nav class="navbar">
+            <a class="title">Presentación</a>
+            <div class="subtitles">
+                <a href="#inicio">Inicio</a>
+                <!-- <a href="#sobre-mi">Sobre Mi</a>
+                <a>Experiencia</a>
+                <a>Contacto</a> -->
+            </div>
+        </nav>
     </header>
-    <main>
-        <section class="flex-row-even">
-            <div class="projects">
-                <h3>Projects</h3>
-                <ul>
-                    <li>HTML Only Portfolio</li>
-                    <li>Calculator</li>
-                    <li>Quiz App</li>
-                    <li>Countdown Timer</li>
-                    <li>Product Upcoming Page</li>
-                </ul>
-            </div>
-            <div class="mid">
-                <div class="work">
-                    <h3>Work Experience</h3>
-
-                    <p>roadmap.sh</p>
-                    <p>Solved all the fontend projects</p>
-                    <p><a href="https://roadmap.sh">Visit my profile</a></p>
+    <section class="hero">
+        <div class="hero-card">
+            <div class="hero-card-main">
+                <div class="hero-card-img">
+                    <img src="img/Foto_CV(1900x1900).jpeg">
                 </div>
-                <div class="open">
-                    <h4>OpenSource Work</h4>
+                <div class="hero-card-text">
+                    <div class="info">
+                        <div class="label">Hola!</div>
+                        <h1>Soy <span>Luciano Peluso</span></h1>
+                        <h2>Desarrollador Full Stack</h2>
+                        <p>Soy graduado en programación con un fuerte interés en el desarrollo full stack.
+                            Aunque he trabajado en varios proyectos utilizando distintos lenguajes y
+                            herramientas, mi enfoque principal está en JavaScript, aunque me adapto
+                            rápidamente a nuevas tecnologías y enfoques.</p>
+                    </div>
 
-                    <p>Contributed to 50 opensource<br>
-                        projects. Made my own projects with<br>
-                        200 GitHub Stars.
-                    </p>
-                    <p><a href="https://github.com/luciano-peluso">Visit my GitHub Profile</a></p>
+                    <div class="details">
+                        <p class="prompt">Edad</p> <p class="answer">22</p>
+                        <p class="prompt">Residencia</p> <p class="answer">Buenos Aires, Argentina</p>
+                        <p class="prompt">E-mail</p> <p class="answer">pelusoluciano13@gmail.com</p>
+                        <p class="prompt">Teléfono</p> <p class="answer">(+54) 9 11 3572-8953 </p>
+                    </div>
                 </div>
             </div>
-            <div class="education">
-                <h3>Education</h3>
-                <p>Graduated with 3.76 out of 4<br>
-                CGPA. Won Acme Hackathon.<br>
-                Organized 30 sessions.</p>
-
-                <p>Courses I took:</p>
-                <ul>
-                    <li>Object Oriented Programming</li>
-                    <li>Data Structures and Algorithms</li>
-                    <li>Web Engineering</li>
-                    <li>Artificial Intelligence</li>
-                    <li>Human Computer Interaction</li>
-                    <li>Computer Graphics</li>
-                    <li>Database Management Systems</li>
-                    <li>Distributed Database Systems</li>
-                    <li>Discreet Mathematics</li>
-                </ul>
+            <div class="hero-card-footer">
+                <div class="bubble"><a href="https://linkedin.com/in/luciano-danilo-peluso">LinkedIn</a></div>
+                <div class="bubble"><a href="https://github.com/luciano-peluso">GitHub</a></div>
             </div>
-        </section>
-        
-    </main>
-    <footer>
-        <p>&copy; 2024 Lucho Peluso - Web Development. Todos los derechos reservados.</p>
-        <p>El contenido de este sitio está protegido por derechos de autor. Queda prohibida su reproducción sin permiso.</p>
-    </footer>
+        </div>
+    </section> 
 </body>
 </html>
