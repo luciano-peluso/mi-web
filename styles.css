@@ -1,6 +1,6 @@
-* {
-  /* border: 1px solid black; */
-}
+/* * {
+  border: 1px solid black; 
+} */
 
 body {
   --fondoPrincipal: #D6E0DC;
@@ -21,6 +21,8 @@ body {
   align-items: center;
   justify-content: space-around;
   height: var(--heightNav);
+  border-bottom: 1px solid #888;
+  background: linear-gradient(#f3f3f3, #fff);
 }
 .navbar a {
   text-decoration: none;
@@ -40,23 +42,12 @@ body {
   min-height: 90vh;
 }
 
-.hero-card {
-  width: 70%;
-  max-width: 1400px;
-  margin: auto;
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-  background-color: white;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
 .hero-card-main {
   padding: 60px;
   display: flex;
   justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .label {
@@ -89,12 +80,12 @@ font-size: 1.5rem;
 .details {
 display: grid;
 grid-template-columns: 1fr 4fr;
-font-size: 15px;
+font-size: 18px;
 gap: 1px;
 }
 
 .details .prompt {
-  font-size: 16px;
+  font-size: 19px;
   font-weight: bold;
 }
 .details .answer {
@@ -128,9 +119,11 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 .hero-card-footer {
 display: flex;
 height: 60px;
-justify-content: space-around;
 align-items: center;
+justify-content: center;
+gap: 10px;
 background-color: #00c676;
+box-shadow: 0 8px 10px #888;
 }
 
 .bubble a {
@@ -151,7 +144,7 @@ background-color: #006c45;
 
 @media (max-width: 1200px) {
   .hero-card {
-      width: 85%;
+      width: 100%;
   }
 }
 
