@@ -13,8 +13,23 @@ body {
   --fullHeight: 100vh;
   margin: 0;
   font-family: "Roboto", sans-serif;
+  padding-top: var(--heightNav)
+}
+section {
+  scroll-margin-top: var(--heightNav);
+}
+header {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
 }
 
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 
 .navbar {
   display: flex;
@@ -38,8 +53,10 @@ body {
   font-size: 1.2rem;
 }
 
-.hero {
-  min-height: 90vh;
+.subtitles a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
 }
 
 .hero-card-main {
@@ -140,11 +157,236 @@ transition: background-color 0.3s;
 background-color: #006c45;
 }
 
+.projects {
+  background-color: #f9f9f9;
+  width: 100%;
+  padding: 50px 0px;
+}
+
+.project-colector {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #00c676;
+}
+
+.project-star {
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.project-star h3 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.project-star .mid {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 50px;
+  align-items: center;
+}
+
+.project-star .image {
+  flex: 1 1 300px; margin: auto;
+}
+
+.project-star .text {
+  flex: 1 1 300px;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tag {
+  background-color: #00c676;
+  color: #F3F3F3;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.project-star img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.education-section {
+  padding: 2rem;
+  background-color: #f3f3f3;
+}
+
+.education-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #00c676;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.edu-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+}
+
+.edu-card h3 {
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.edu-card p {
+  color: #444;
+  margin: 0.3rem 0;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.3rem 0.8rem;
+  background-color: #00c676;
+  color: white;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.badge-inprogress {
+  background-color: #ffa500; /* naranja para "en curso" */
+}
+
+
+.experience {
+  z-index: 0;
+  padding: 50px 0;
+}
+
+.experience-header {
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.experience-header h2 {
+  font-size: 2rem;
+  color: #00c676;
+  margin-bottom: 10px;
+}
+
+.experience-header p {
+  font-size: 1rem;
+  color: #444;
+  font-style: italic;
+}
+
+.timeline {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  max-width: 600px;
+  margin: auto;
+  border-left: 3px solid #00c676;
+}
+
+.timeline-item {
+  width: 500px;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 30px;
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #00c676;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px #00c676;
+}
+
+.final-card {
+  background-color: #eafff3;
+  border: 2px dashed #00c676;
+  text-align: center;
+  font-style: italic;
+}
+
+.timeline h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.timeline h4 {
+  margin: 0.3rem 0 0.7rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.timeline p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 40px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.end p {
+  padding-bottom: 20px;
+}
+
+.end a{
+    padding: 10px 20px;
+    border: 1px solid #cccccc;
+    background-color: #00c676;
+    color: #f2f2f2;
+}
+
 /* Media Queries para hacer la página responsive */
 
 @media (max-width: 1200px) {
   .hero-card {
       width: 100%;
+  }
+
+  .info h1 {
+    font-size: 2.3rem;
+  }
+  .education-grid { 
+    grid-template-columns: 2fr 2fr;
   }
 }
 
@@ -174,8 +416,11 @@ background-color: #006c45;
       flex-direction: column;
       align-items: center;
       padding: 30px;
+      margin-top: 20px;
   }
-  
+  .info h1 {
+    font-size: 2.3rem;
+  }
   .hero-card-img, 
   .hero-card-text {
       width: 100%;
@@ -193,18 +438,57 @@ background-color: #006c45;
   .hero-card-footer {
       height: auto;
       padding: 15px 0;
-      flex-direction: column;
+      flex-direction: row;
       gap: 20px;
   }
 }
 
 @media (max-width: 576px) {
+  .navbar {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .subtitles {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    display: none;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding: 1rem 0;
+  }
+
+  .subtitles.show {
+    display: flex;
+  }
+
+  .title {
+    margin: 0;
+    font-size: 2rem;
+  }
+  .hamburger {
+    overflow: hidden;
+    display: block;
+  }
   .hero-card {
       width: 95%;
   }
   
   .hero-card-main {
-      padding: 20px;
+      padding: 0 30px;
+      margin-top: 20px;
   }
   
   h1 {
@@ -222,12 +506,105 @@ background-color: #006c45;
   .details {
       grid-template-columns: 1fr 2fr;
   }
+  .answer {
+    text-align: end; 
+  }
+
+  .hero-card-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 1.2rem 0;
+  }
   
+  .experience {
+    margin-top: 20px;
+    padding: 30px 10px;
+  }
+
+  .experience-header h2 {
+    font-size: 2rem;
+  }
+
+  .experience-header p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .timeline {
+    border-left: 2px solid #00c676;
+    padding-left: 8px;
+    align-content: flex-start;
+  }
+
+  .timeline-item {
+    width: 100%;
+    max-width: 90%;
+    padding: 15px 20px;
+    margin: 12px 0;
+  }
+
+  .timeline-dot {
+    width: 14px;
+    height: 14px;
+    left: -12px;
+    top: 8px;
+  }
+
+  .timeline h3 {
+    font-size: 1rem;
+  }
+
+  .timeline h4 {
+    font-size: 0.85rem;
+  }
+
+  .timeline p {
+    font-size: 0.88rem;
+    line-height: 1.4;
+  }
+
+  .final-card {
+    font-size: 0.9rem;
+    padding: 18px;
+  }
+
+  .education-section h2 {
+    font-size: 2rem;
+  }
+
+  .projects h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .mid {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .mid .text {
+    order: 1;
+    flex: 1 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 30px;
+  }
+  .project-star {
+    margin: 0;
+  }
+
+  .project-star .mid {
+    gap: 0px;
+  }
+
+  .mid .image {
+    order: 2;
+    max-height: fit-content;
+  }
+
   .subtitles {
       flex-wrap: wrap;
       justify-content: center;
       gap: 15px;
   }
 }
-
-/* Añadir esto al final de tu archivo CSS existente */

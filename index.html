@@ -10,21 +10,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header>    
         <nav class="navbar">
             <a class="title">Presentación</a>
-            <div class="subtitles">
-                <a>Inicio</a>
-                <a>Sobre Mi</a>
-                <a>Experiencia</a>
-                <a>Contacto</a>
+            <div class="subtitles" id="nav-links">
+                <a href="#hero">Inicio</a>
+                <a href="#experience">Experiencia</a>
+                <a href="#education">Educación</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#end">Contacto</a>
+            </div>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                &#9776;
             </div>
         </nav>
     </header>
-    <section class="hero">
+
+    <section class="hero" id="hero">
             <div class="hero-card-main">
                 <div class="hero-card-img">
-                    <img src="img/Foto_CV(1900x1900).jpeg">
+                    <img src="src/img/Foto_CV(1900x1900).jpeg">
                 </div>
                 <div class="hero-card-text">
                     <div class="info">
@@ -50,5 +55,190 @@
                 <div class="bubble"><a href="https://github.com/luciano-peluso">GitHub</a></div>
             </div>
     </section> 
+
+    <section class="experience" id="experience">
+        <div class="experience-header">
+            <h2>Experiencia Profesional</h2>
+            <p>Puede que la experiencia aún no sea extensa, pero lo más importante... siempre está por venir.</p>
+        </div>
+    
+        <div class="timeline">
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>GM Tech - Desarrollador Web</h3>
+                    <h4>Julio 2020 - Noviembre 2022</h4>
+                    <p>Creación y edición de páginas web responsive con WordPress. Manejo de bases de datos. Gestión de certificados SSL. Soporte IT. Data entry. Web tester.</p>
+                </div>
+            </div>
+    
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Egosystems - Soporte IT</h3>
+                    <h4>Enero 2023 - Junio 2023</h4>
+                    <p>Atención al cliente. Configuración de software. Instalación y configuración de impresoras. Laboratorio de computadoras. Visitas a empresas y particulares.</p>
+                </div>
+            </div>
+                
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>VN Digital - Desarrollador Web</h3>
+                    <h4>Noviembre 2023 - Actualidad</h4>
+                    <p>Creación de sitios web responsive con HTML, CSS y JavaScript. Gestión de certificados SSL. Gestión de altas de páginas mediante servidores.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item final-card">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>¿Siguiente paso? 🔥</h3>
+                    <p>Aunque el camino recién empieza, mi motivación y las ganas de aprender solo crecen. Lo mejor está por venir 🚀</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education-section" id="education">
+        <h2>Educación</h2>
+        <div class="education-grid">
+          <div class="edu-card">
+            <h3>Tecnicatura Sup. en Informática Aplicada</h3>
+            <p><strong>UTN - I.N.S.P.T</strong></p>
+            <p>Marzo 2021 - Febrero 2025</p>
+            <span class="badge">Finalizado</span>
+          </div>
+          <div class="edu-card">
+            <h3>Bachillerato en Economía y Adm.</h3>
+            <p><strong>Inst. Ntra. Sra. del Carmen</strong></p>
+            <p>2015 - 2019</p>
+            <span class="badge">Finalizado</span>
+          </div>
+          <div class="edu-card">
+            <h3>First Certificate in English (FCE)</h3>
+            <p><strong>Universidad de Cambridge</strong></p>
+            <p>Certificación de nivel avanzado</p>
+            <p>2018</p>
+            <span class="badge">Aprobado</span>
+          </div>
+          <div class="edu-card">
+            <h3>Responsive Web Design</h3>
+            <p><strong>freeCodeCamp</strong></p>
+            <p>Curso en desarrollo web front-end</p>
+            <span class="badge badge-inprogress">En curso</span>
+          </div>
+        </div>
+      </section>
+      
+    <section class="projects" id="projects">
+        <h2>Mis proyectos</h2>
+        <div class="project-colector">
+            <div class="project-star">
+                <div class="mid">
+                    <div class="text">
+                        <h3>NSTOM</h3>
+                        <p>
+                            Para mi proyecto final universitario desarrollé <strong>NSTOM</strong>, un sistema integral de gestión para <strong>profesionales de la salud monotributistas</strong>. 
+                            Permite manejar <strong>pacientes, facturas y cobros</strong>, emitir comprobantes frente a <strong>ARCA</strong> y cuenta con <strong>recordatorios automáticos</strong> de vencimientos.
+                        </p>
+                        <div class="tags">
+                            <p class="tag">JavaScript</p>
+                            <p class="tag">Node.js</p>
+                            <p class="tag">Express.js</p>
+                            <p class="tag">React</p>
+                            <p class="tag">PostgreSQL</p>
+                            <p class="tag">CronJobs</p>
+                            <p class="tag">Chakra UI</p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="src/img/facturas.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-star">
+                <div class="mid">
+                    <div class="image">
+                        <img src="src/img/okapii.jpeg">
+                    </div>
+                    <div class="text">
+                        <h3>Okapii</h3>
+                        <p>
+                            Proyecto académico basado en una empresa ficticia de software. Desarrollé un sistema con <strong>permisos por rol</strong> para gestionar <strong>usuarios y proyectos</strong>, 
+                            incluyendo asignación de desarrolladores y un <strong>ciclo de vida por etapas</strong> para los trabajos.
+                        </p>
+                        <div class="tags">
+                            <p class="tag">JavaScript</p>
+                            <p class="tag">Node.js</p>
+                            <p class="tag">Express.js</p>
+                            <p class="tag">React</p>
+                            <p class="tag">MongoDB</p>
+                            <p class="tag">Chakra UI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-star">
+                <div class="mid">
+                    <div class="text">
+                        <h3>La Pelotita</h3>
+                        <p>
+                            <strong>Extensión de Chrome</strong> para seguir de cerca a tu equipo del fútbol argentino. Muestra <strong>resultados, posiciones, próximos partidos</strong> y rivales clave, 
+                            todo en un solo lugar, sin necesidad de buscar en otras páginas.
+                        </p>
+                        <div class="tags">
+                            <p class="tag">JavaScript</p>
+                            <p class="tag">API</p>
+                            <p class="tag">HTML</p>
+                            <p class="tag">CSS</p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="src/img/lapelotita.jpeg">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-star">
+                <div class="mid">
+                    <div class="image">
+                        <img src="src/img/lectordefacturas.jpeg">
+                    </div>
+                    <div class="text">
+                        <h3>Lector de Facturas</h3>
+                        <p>
+                            A pedido de un amigo, creé una app en <strong>Python</strong> que lee <strong>facturas en PDF</strong> y extrae sus datos para pegarlos en hojas de cálculo, 
+                            eliminando el trabajo manual. Ideal para <strong>administradores de consorcios</strong> o tareas repetitivas.
+                        </p>
+                        <div class="tags">
+                            <p class="tag">Python</p>
+                            <p class="tag">PdfPlumber</p>
+                            <p class="tag">Tkinter</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="end">
+        <div class="end"> 
+            <h3>¡Muchas gracias por llegar hasta acá!</h3>
+            <p>Acá te dejo un botón para que puedas ver mi CV en detalle</p>
+            <a href="src/CV - Luciano Peluso - ES.pdf">Descargar CV</a>
+        </div>
+    </footer>
 </body>
+<script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-links');
+      menu.classList.toggle('show');
+    }
+  </script>
 </html>
+
+
