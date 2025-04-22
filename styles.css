@@ -1,7 +1,9 @@
 /* * {
   border: 1px solid black; 
 } */
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   --fondoPrincipal: #D6E0DC;
   --fondoSecundario: #A0B4C3;
