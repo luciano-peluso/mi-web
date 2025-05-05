@@ -183,9 +183,17 @@ background-color: #006c45;
   border-radius: 12px;
   margin-bottom: 2rem;
 }
-
+.title { 
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--letrasPrincipal)
+}
 .project-star h3 {
   margin-top: 0;
+  margin-bottom: 8px;
   font-size: 1.8rem;
 }
 
@@ -207,6 +215,7 @@ background-color: #006c45;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin: 15px 0;
 }
 .tag {
   background-color: #00c676;
